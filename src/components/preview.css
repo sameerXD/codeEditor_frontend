@@ -1,0 +1,110 @@
+/* Preview.css */
+/* Style headings and paragraphs differently */
+h1 {
+    font-size: 2em; /* Adjust size as needed */
+    font-weight: bold; /* Make heading bold */
+    margin-bottom: 0.5em; /* Add some space below heading */
+}
+
+p {
+    font-size: 1em; /* Adjust size as needed */
+    line-height: 1.5; /* Increase line height for readability */
+    margin-bottom: 1em; /* Add some space below paragraph */
+}
+
+/* Preview.css */
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif; /* Choose your preferred font family */
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Headings */
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 1.17em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+h4 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+h5 {
+    font-size: 0.83em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+h6 {
+    font-size: 0.67em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+/* Paragraph */
+p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+
+/* Lists */
+ul, ol {
+    margin-bottom: 1em;
+    margin-left: 2em;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+/* Links */
+a {
+    color: blue; /* Link color */
+    text-decoration: underline; /* Underline links */
+}
+
+/* Blockquote */
+blockquote {
+    margin-left: 1em; /* Indent blockquote */
+}
+
+/* Code */
+pre {
+    background-color: #f4f4f4; /* Light gray background for code blocks */
+    padding: 1em;
+    margin-bottom: 1em;
+    overflow: auto;
+}
+
+code {
+    font-family: "Courier New", Courier, monospace; /* Monospace font for code */
+}
+
+/* Horizontal rule */
+hr {
+    border: 1px solid #ccc; /* Light gray border */
+    margin: 1em 0; /* Add space above and below the horizontal rule */
+}

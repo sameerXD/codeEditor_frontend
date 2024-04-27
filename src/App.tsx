@@ -1,24 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import "./App.css";
+import TextEditor from "./components/TextEditor";
+import Preview from "./components/Preview";
+import socket from "./utils/Socket";
 
 function App() {
+  useEffect(() => {
+    socket.on("connect", () => {
+      console.log("Connected to the server");
+    });
+
+    socket.on("disconnect", () => {});
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+      <div className="flex h-screen">
+        <TextEditor />
+        <Preview />
+      </div>
     </div>
   );
 }
