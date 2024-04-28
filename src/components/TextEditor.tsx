@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import socket from "../utils/Socket";
 
 const TextEditor = () => {
-  const [code, setCode] = useState("");
+  const [code, setCode] = useState("**Preview:**");
+  socket.emit("code", code);
 
   const handleChange = (e: any) => {
     setCode(e.target.value);
